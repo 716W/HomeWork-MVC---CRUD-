@@ -13,7 +13,6 @@ It allows users to **add, update, delete, and view students**.
 - **ASP.NET Core MVC** for the web application  
 - **Entity Framework Core** for database interactions  
 - **C#** as the programming language  
-- **SQL Server** as the database  
 - **Bootstrap** for UI design  
 
 ## 🏗️ Design Pattern Used
