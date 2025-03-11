@@ -11,18 +11,22 @@
     <h4>Student Details</h4>
     <hr />
     <div class="row mb-3">
+
+        <div class="col-sm-2"><strong>Id: </strong></div>
+        <div class="col-sm-4">@Model.Id</div>
+
         <div class="col-sm-2"><strong>Name: </strong></div>
         <div class="col-sm-4">@Model.FirstName @Model.LastName</div>
 
-        <div class="col-sm-2"><strong>Age: </strong></div>
-        <div class="col-sm-4">@Model.Age</div>
     </div>
     <div class="row mb-3">
+
+        <div class="col-sm-2"><strong>Age: </strong></div>
+        <div class="col-sm-4">@Model.Age</div>
+
         <div class="col-sm-2"><strong>Email: </strong></div>
         <div class="col-sm-4">@Model.Email</div>
 
-        <div class="col-sm-2"><strong>Phone Number: </strong></div>
-        <div class="col-sm-4">@Model.PhoneNumber</div>
     </div>
     <div class="row mb-3">
         <div class="col-sm-2"><strong>Major: </strong></div>
@@ -34,6 +38,9 @@
     <div class="row mb-3">
         <div class="col-sm-2"><strong>Address: </strong></div>
         <div class="col-sm-4">@Model.Address</div>
+
+        <div class="col-sm-2"><strong>Phone Number: </strong></div>
+        <div class="col-sm-4">@Model.PhoneNumber</div>
     </div>
 
     <div class="text-center mt-4">

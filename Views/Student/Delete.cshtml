@@ -10,27 +10,38 @@
 <div>
     <h4>Student Details</h4>
     <hr />
-    <dl class="row">
-        <dt class="col-sm-2">Name</dt>
-        <dt class="col-sm-2">@Model.FirstName @Model.LastName</dt>
-        <hr />
+    <div class="row mb-3">
 
-        <dt class="col-sm-2">Age</dt>
-        <dt class="col-sm-2">@Model.Age</dt>
-        <hr />
+        <div class="col-sm-2"><strong>Id: </strong></div>
+        <div class="col-sm-4">@Model.Id</div>
 
-        <dt class="col-sm-2">Email</dt>
-        <dt class="col-sm-2">@Model.Email</dt>
-        <hr />
+        <div class="col-sm-2"><strong>Name: </strong></div>
+        <div class="col-sm-4">@Model.FirstName @Model.LastName</div>
 
-        <dt class="col-sm-2">Major</dt>
-        <dt class="col-sm-2">@Model.MajorName</dt>
-        <hr />
+    </div>
+    <div class="row mb-3">
 
-        <dt class="col-sm-2">GPA</dt>
-        <dt class="col-sm-2">@Model.GPA</dt>
-        <hr />
-    </dl>
+        <div class="col-sm-2"><strong>Age: </strong></div>
+        <div class="col-sm-4">@Model.Age</div>
+
+        <div class="col-sm-2"><strong>Email: </strong></div>
+        <div class="col-sm-4">@Model.Email</div>
+
+    </div>
+    <div class="row mb-3">
+        <div class="col-sm-2"><strong>Major: </strong></div>
+        <div class="col-sm-4">@Model.MajorName</div>
+
+        <div class="col-sm-2"><strong>GPA: </strong></div>
+        <div class="col-sm-4">@Model.GPA</div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-sm-2"><strong>Address: </strong></div>
+        <div class="col-sm-4">@Model.Address</div>
+
+        <div class="col-sm-2"><strong>Phone Number: </strong></div>
+        <div class="col-sm-4">@Model.PhoneNumber</div>
+    </div>
 </div>
 
 <!-- Confirmation Box -->
