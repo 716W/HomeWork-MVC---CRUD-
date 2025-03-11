@@ -5,6 +5,7 @@ namespace HomeWork.Repositories
     public class GenericRepository<T> : IRepository<T> where T : Student
     {
         private  static List<T>? _items;
+        private static int idCount = 1 ;
 
         public GenericRepository()
         {
@@ -12,7 +13,7 @@ namespace HomeWork.Repositories
 
             var st = new Student
             {
-                Id = 1,
+                Id = idCount ,
                 FirstName = "Ahmed",
                 LastName = "Ali",
                 MajorName = "Computer Science",
@@ -25,6 +26,7 @@ namespace HomeWork.Repositories
 
             if (st is T studentT)
             {
+                
                 _items.Add(studentT);
             }
         }
@@ -41,6 +43,12 @@ namespace HomeWork.Repositories
 
         public void Add(T item)
         {
+            if (_items.Count == 0)
+            {
+                idCount = 1;
+            }
+
+            item.Id = idCount++;
             _items.Add(item);
         }
 
