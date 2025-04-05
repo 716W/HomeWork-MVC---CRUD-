@@ -10,8 +10,7 @@ It allows users to **add, update, delete, and view students**.
 - 📋 Display students in a table format  
 
 ## 🛠️ Technologies Used
-- **ASP.NET Core MVC** for the web application  
-- **Entity Framework Core** for database interactions  
+- **ASP.NET Core MVC** for the web application   
 - **C#** as the programming language  
 - **Bootstrap** for UI design  
 
